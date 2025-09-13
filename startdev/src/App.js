@@ -12,6 +12,8 @@ function App() {
     <div className="App">
       <Header />
       <Main />
+      <Main />
+      <Main />      
       <Footer />
       <h1 className="text-3xl font-bold underline">Testing TailwindCSS</h1>
     </div>
