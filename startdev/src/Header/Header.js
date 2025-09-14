@@ -9,7 +9,7 @@ function Header() {
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigationSections = ['home', 'projects', 'contact'];
-  const logoText = 'AR';
+  const logoText = 'T2P';
   const glowStyle = { textShadow: '0 0 10px #8b5cf6, 0 0 20px #8b5cf6, 0 0 30px #8b5cf6' };
   
   const handleMobileNavClick = (section) => {
