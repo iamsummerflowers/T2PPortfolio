@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
 
-function Header() {
+function Header({ activeSection, setActiveSection }) {
 
-  const [activeSection, setActiveSection] = useState('home');
+//   const [activeSection, setActiveSection] = useState('home');
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigationSections = ['home', 'projects', 'contact'];

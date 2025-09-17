@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react';
 import './Hero.css';
 import { Link } from 'react-router-dom';
 
-function Hero() {
+function Hero({ setActiveSection }) {
 
-  const [activeSection, setActiveSection] = useState('home');
+//   const [activeSection, setActiveSection] = useState('home');
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -34,13 +34,13 @@ function Hero() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <button
                         onClick={() => setActiveSection('projects')}
-                        className="px-8 py-3 bg-gradient-to-r from-violet-600 to-purple-600 text-white rounded-full font-semibold hover:from-violet-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
+                        className="w-fit px-8 py-3 bg-gradient-to-r from-violet-600 to-purple-600 text-white rounded-md font-semibold hover:from-violet-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
                     >
                         View My Work
                     </button>
                     <button
                         onClick={() => setActiveSection('contact')}
-                        className="px-8 py-3 border-2 border-violet-400 text-violet-300 rounded-full font-semibold hover:bg-violet-400 hover:text-white transition-all duration-300"
+                        className="w-fit px-8 py-3 border-2 border-violet-400 text-violet-300 rounded-md font-semibold hover:bg-violet-400 hover:text-white transition-all duration-300"
                     >
                         Get In Touch
                     </button>

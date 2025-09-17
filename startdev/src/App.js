@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import './App.css';
 import Header from './Header/Header.js';
 import Hero from './Hero/Hero.js';
+import ProjectsGrid from './Projects/ProjectsGrid.js';
+import ProjectModal from './Projects/ProjectModal.js';
 import Featured from './Featured/Featured.js';
 import Footer from './Footer/Footer.js';
 
@@ -26,9 +28,9 @@ function App() {
             </>
         )}
         
-        {/* {activeSection === 'projects' && <ProjectsGrid setSelectedProject={setSelectedProject} />}
+        {activeSection === 'projects' && <ProjectsGrid setSelectedProject={setSelectedProject} />}
         
-        {activeSection === 'contact' && <ContactForm />}
+        {/* {activeSection === 'contact' && <ContactForm />} */}
         
         <ProjectModal 
             selectedProject={selectedProject} 
@@ -36,12 +38,12 @@ function App() {
             setDemoMode={setDemoMode}
             setCodeView={setCodeView}
         />
-        <LiveDemo 
+        {/* <LiveDemo 
             demoMode={demoMode} 
             setDemoMode={setDemoMode}
             setCodeView={setCodeView}
-        />
-        <CodeViewer 
+        /> */}
+        {/* <CodeViewer 
             codeView={codeView} 
             setCodeView={setCodeView}
             setDemoMode={setDemoMode}
