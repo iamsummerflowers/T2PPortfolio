@@ -7,6 +7,7 @@ import Hero from './Hero/Hero.js';
 import ProjectsGrid from './Projects/ProjectsGrid.js';
 import ProjectModal from './Projects/ProjectModal.js';
 import Featured from './Featured/Featured.js';
+import Contact from './Contact/Contact.js';
 import Footer from './Footer/Footer.js';
 
 
@@ -30,7 +31,7 @@ function App() {
         
         {activeSection === 'projects' && <ProjectsGrid setSelectedProject={setSelectedProject} />}
         
-        {/* {activeSection === 'contact' && <ContactForm />} */}
+        {activeSection === 'contact' && <Contact />}
         
         <ProjectModal 
             selectedProject={selectedProject} 
