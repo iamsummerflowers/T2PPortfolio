@@ -1,12 +1,16 @@
+import comfortHomeDecorImage from '../assets/comforthd.png';
+
 export const projects = [
         {
             id: 1,
-            title: "NeuroSync Dashboard",
+            title: "Comfort Home Decor",
             description: "AI-powered analytics platform with real-time data visualization and machine learning insights.",
             tech: ["React", "D3.js", "Python", "TensorFlow"],
             featured: true,
-            image: "🧠",
+            image: "🏘️",
             color: "from-purple-600 to-indigo-600",
+            siteURL: 'https://comforthomedecor.com/',
+            codeURL: 'https://github.com/iamsummerflowers/ComfortHomeDecor',
             demoContent: {
                 title: "Live Neural Network Visualization",
                 features: ["Real-time data processing", "Interactive 3D graphs", "AI prediction models", "Custom dashboards"]
@@ -34,12 +38,14 @@ export const projects = [
         },
         {
             id: 2,
-            title: "Cosmic Commerce",
+            title: "Slaughter Comedy",
             description: "E-commerce platform with AR product visualization and blockchain payment integration.",
             tech: ["Next.js", "Three.js", "Solidity", "WebXR"],
             featured: false,
-            image: "🌌",
+            image: "🎭",
             color: "from-indigo-600 to-violet-600",
+            siteURL: 'https://slaughtercomedy.com/',
+            codeURL: 'https://github.com/iamsummerflowers/slaughter-comedy',
             demoContent: {
                 title: "AR Shopping Experience",
                 features: ["3D product models", "Virtual try-on", "Blockchain payments", "Spatial commerce"]
@@ -68,12 +74,14 @@ export const projects = [
         },
         {
             id: 3,
-            title: "SoundWave Studio",
+            title: "Beyond Sight Solutions",
             description: "Web-based music production suite with collaborative features and cloud storage.",
             tech: ["Vue.js", "Web Audio API", "Node.js", "WebRTC"],
             featured: false,
-            image: "🎵",
+            image: "🏢",
             color: "from-violet-600 to-purple-600",
+            siteURL: 'https://beyondsightsolutions.com/',
+            codeURL: 'https://github.com/iamsummerflowers/BSS',
             demoContent: {
                 title: "Digital Audio Workstation",
                 features: ["Multi-track recording", "Real-time collaboration", "VST plugin support", "Cloud sync"]
@@ -110,12 +118,14 @@ export const projects = [
         },
         {
             id: 4,
-            title: "Quantum Chat",
+            title: "summflowersTLDR",
             description: "End-to-end encrypted messaging app with quantum-resistant cryptography.",
             tech: ["React Native", "WebAssembly", "Rust", "Signal Protocol"],
             featured: false,
-            image: "⚛️",
+            image: "👩🏿‍💻",
             color: "from-purple-600 to-pink-600",
+            siteURL: 'https://summflowerstldr.com/',
+            codeURL: 'http://github.com/iamsummerflowers/summflowersTLDR',
             demoContent: {
                 title: "Quantum-Safe Messaging",
                 features: ["Post-quantum encryption", "Zero-knowledge architecture", "Disappearing messages", "Secure group chats"]

@@ -167,6 +167,7 @@ function ProjectsGrid ({ setSelectedProject }) {
                 All Projects
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
                 {projects.map((project) => (
                     <div
                         key={project.id}
@@ -179,32 +180,36 @@ function ProjectsGrid ({ setSelectedProject }) {
                             transition: 'all 0.3s ease'
                         }}
                         onMouseEnter={(e) => {
-                            e.target.style.transform = 'translateY(-5px)';
-                            e.target.style.background = 'rgba(139, 92, 246, 0.2)';
-                            e.target.style.boxShadow = '0 20px 40px rgba(139, 92, 246, 0.3)';
+                            const card = e.currentTarget;
+                            card.style.transform = 'translateY(-5px)';
+                            card.style.background = 'rgba(139, 92, 246, 0.2)';
+                            card.style.boxShadow = '0 20px 40px rgba(139, 92, 246, 0.3)';
                         }}
                         onMouseLeave={(e) => {
-                            e.target.style.transform = 'translateY(0px)';
-                            e.target.style.background = 'rgba(139, 92, 246, 0.1)';
-                            e.target.style.boxShadow = 'none';
+                            const card = e.currentTarget;
+                            card.style.transform = 'translateY(0px)';
+                            card.style.background = 'rgba(139, 92, 246, 0.1)';
+                            card.style.boxShadow = 'none';
                         }}
                     >
-                        <div className="text-4xl mb-4">{project.image}</div>
-                        <h3 className="text-xl font-semibold text-white mb-3">{project.title}</h3>
+                        <div className = "flex justify-items-stretch items-center">
+                            <div className="w-fit text-4xl mb-4">{project.image}</div>
+                            <h3 className=" w-fit text-xl font-semibold text-white mx-2 mb-3">{project.title}</h3>
+                        </div>
                         <p className="text-gray-300 text-sm mb-4 line-clamp-3">
                             {project.description}
                         </p>
-                        <div className="flex flex-wrap gap-1 mb-4">
+                        <div className="w-fit flex flex-wrap gap-1 mb-4">
                             {project.tech.slice(0, 3).map((tech, index) => (
                                 <span
                                     key={index}
-                                    className="px-2 py-1 bg-violet-600/20 text-violet-300 rounded text-xs"
+                                    className="w-fit px-2 py-1 bg-violet-600/20 text-violet-300 rounded text-xs"
                                 >
                                     {tech}
                                 </span>
                             ))}
                             {project.tech.length > 3 && (
-                                <span className="px-2 py-1 bg-violet-600/20 text-violet-300 rounded text-xs">
+                                <span className="w-fit px-2 py-1 bg-violet-600/20 text-violet-300 rounded text-xs">
                                     +{project.tech.length - 3}
                                 </span>
                             )}
