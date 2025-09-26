@@ -29,7 +29,7 @@ function Hero({ setActiveSection }) {
                     <span className="text-white"> Prod</span>
                 </h1>
                 <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                    Crafting digital experiences that blend creativity with cutting-edge technology
+                    Turn ideas into reality
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <button
