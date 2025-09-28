@@ -1,4 +1,9 @@
 import comfortHomeDecorImage from '../assets/comforthd.png';
+import chdfeatured from '../assets/chdfeatured.mp4';
+import slfeatured from '../assets/slfeatured.mp4';
+import bssfeatured from '../assets/bssfeatured.mp4';
+import portfeatured from '../assets/portfeatured.mp4';
+import hndfeatured from '../assets/hndfeatured.mp4';
 
 export const projects = [
         {
@@ -6,7 +11,8 @@ export const projects = [
             title: "Comfort Home Decor",
             description: "Home decor website that offers interior, exterior, and re-design services for residential and commercial owners.",
             tech: ["React.js", "CSS"],
-            featured: true,
+            featured: false,
+            featureVideo: chdfeatured,
             image: "🏘️",
             color: "from-purple-600 to-indigo-600",
             siteURL: 'https://comforthomedecor.com/',
@@ -42,6 +48,7 @@ export const projects = [
             description: "Veteran owned entertainment website that produces and promotes tailorable comedy shows for small to meium businesses and theaters.",
             tech: ["React.js", "CSS"],
             featured: false,
+            featureVideo: slfeatured,
             image: "🎭",
             color: "from-indigo-600 to-violet-600",
             siteURL: 'https://slaughtercomedy.com/',
@@ -78,6 +85,7 @@ export const projects = [
             description: "Consulting services website that helps small to medium businesses effectively achieve their business goals and objectives.",
             tech: ["React.js", "CSS", "Tailwind"],
             featured: false,
+            featureVideo: bssfeatured,
             image: "🏢",
             color: "from-violet-600 to-purple-600",
             siteURL: 'https://beyondsightsolutions.com/',
@@ -122,6 +130,7 @@ export const projects = [
             description: "Professional portfolio site showcasing experience, accomplishments, and expertise.",
             tech: ["React.js", "CSS", "Tailwind"],
             featured: false,
+            featureVideo: portfeatured,
             image: "👩🏿‍💻",
             color: "from-purple-600 to-pink-600",
             siteURL: 'https://summflowerstldr.com/',
@@ -161,7 +170,8 @@ export const projects = [
             title: "Helping HND Marketing",
             description: "Markting consulting website that provides marketing solutions tailored to drive growth & success.",
             tech: ["React.js", "CSS", "Tailwind"],
-            featured: false,
+            featured: true,
+            featureVideo: hndfeatured,
             image: "📺",
             color: "from-purple-600 to-pink-600",
             siteURL: 'https://www.hhndmarketing.com/',
