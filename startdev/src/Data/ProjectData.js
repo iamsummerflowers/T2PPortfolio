@@ -3,7 +3,7 @@ import chdfeatured from '../assets/chdfeatured.mp4';
 import slfeatured from '../assets/slfeatured.mp4';
 import bssfeatured from '../assets/bssfeatured.mp4';
 import portfeatured from '../assets/portfeatured.mp4';
-import hndfeatured from '../assets/hndfeatured.mp4';
+import featuredVid from '../assets/pwpfeatured.mp4';
 
 export const projects = [
         {
@@ -12,7 +12,7 @@ export const projects = [
             description: "Home decor website that offers interior, exterior, and re-design services for residential and commercial owners.",
             tech: ["React.js", "CSS"],
             featured: false,
-            featureVideo: chdfeatured,
+            featureVideo: featuredVid,
             image: "🏘️",
             color: "from-purple-600 to-indigo-600",
             siteURL: 'https://comforthomedecor.com/',
@@ -48,7 +48,7 @@ export const projects = [
             description: "Veteran owned entertainment website that produces and promotes tailorable comedy shows for small to meium businesses and theaters.",
             tech: ["React.js", "CSS"],
             featured: false,
-            featureVideo: slfeatured,
+            featureVideo: featuredVid,
             image: "🎭",
             color: "from-indigo-600 to-violet-600",
             siteURL: 'https://slaughtercomedy.com/',
@@ -85,7 +85,7 @@ export const projects = [
             description: "Consulting services website that helps small to medium businesses effectively achieve their business goals and objectives.",
             tech: ["React.js", "CSS", "Tailwind"],
             featured: false,
-            featureVideo: bssfeatured,
+            featureVideo: featuredVid,
             image: "🏢",
             color: "from-violet-600 to-purple-600",
             siteURL: 'https://beyondsightsolutions.com/',
@@ -130,7 +130,7 @@ export const projects = [
             description: "Professional portfolio site showcasing experience, accomplishments, and expertise.",
             tech: ["React.js", "CSS", "Tailwind"],
             featured: false,
-            featureVideo: portfeatured,
+            featureVideo: featuredVid,
             image: "👩🏿‍💻",
             color: "from-purple-600 to-pink-600",
             siteURL: 'https://summflowerstldr.com/',
@@ -170,12 +170,53 @@ export const projects = [
             title: "Helping HND Marketing",
             description: "Markting consulting website that provides marketing solutions tailored to drive growth & success.",
             tech: ["React.js", "CSS", "Tailwind"],
-            featured: true,
-            featureVideo: hndfeatured,
+            featured: false,
+            featureVideo: featuredVid,
             image: "📺",
             color: "from-purple-600 to-pink-600",
             siteURL: 'https://www.hhndmarketing.com/',
             codeURL: 'https://github.com/iamsummerflowers/HHND',
+            // demoContent: {
+            //     title: "Quantum-Safe Messaging",
+            //     features: ["Post-quantum encryption", "Zero-knowledge architecture", "Disappearing messages", "Secure group chats"]
+            // },
+            // codeSnippet: `// Quantum-Resistant Encryption
+            // use kyber::*;
+            // use rand::rngs::OsRng;
+
+            // pub struct QuantumChat {
+            //     keypair: Keypair,
+            //     sessions: HashMap<UserId, SharedSecret>,
+            // }
+
+            // impl QuantumChat {
+            //     pub fn new() -> Self {
+            //         let mut rng = OsRng;
+            //         let keypair = keypair(&mut rng);
+                    
+            //         Self {
+            //             keypair,
+            //             sessions: HashMap::new(),
+            //         }
+            //     }
+                
+            //     pub fn encrypt_message(&self, msg: &str, user_id: UserId) -> Vec<u8> {
+            //         let session = self.sessions.get(&user_id).unwrap();
+            //         aes_gcm_encrypt(msg.as_bytes(), &session.key)
+            //     }
+            // }`
+        },
+            {
+            id: 6,
+            title: "Parenting with a Purpose",
+            description: "Community oriented platform that promotes raising resilient, compassionate, and purpose-driven children.",
+            tech: ["React.js", "CSS", "Tailwind"],
+            featured: true,
+            featureVideo: featuredVid,
+            image: "🧑🏿‍🍼",
+            color: "from-purple-600 to-pink-600",
+            siteURL: 'https://www.parentingwithapurpose.us/',
+            codeURL: 'https://github.com/iamsummerflowers/PWP',
             // demoContent: {
             //     title: "Quantum-Safe Messaging",
             //     features: ["Post-quantum encryption", "Zero-knowledge architecture", "Disappearing messages", "Secure group chats"]
