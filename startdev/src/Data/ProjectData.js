@@ -52,7 +52,7 @@ export const projects = [
             image: "🎭",
             color: "from-indigo-600 to-violet-600",
             siteURL: 'https://slaughtercomedy.com/',
-            codeURL: 'https://github.com/iamsummerflowers/slaughter-comedy',
+            codeURL: 'https://github.com/iamsummerflowers/SComedy',
             // demoContent: {
             //     title: "AR Shopping Experience",
             //     features: ["3D product models", "Virtual try-on", "Blockchain payments", "Spatial commerce"]
