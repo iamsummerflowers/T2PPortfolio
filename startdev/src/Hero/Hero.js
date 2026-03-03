@@ -26,7 +26,7 @@ function Hero({ setActiveSection }) {
                     >
                         Think to
                     </span>
-                    <span className="text-white"> ProdX</span>
+                    <span className="text-white"> ProdX2</span>
                 </h1>
                 <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
                     Turn ideas into reality
